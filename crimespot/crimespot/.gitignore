@@ -1,0 +1,57 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# backend assets: each entry below is either a large dataset or a model artifact.
+# They can all be regenerated locally by following the training steps in the README,
+# so we keep them out of the repo to speed up cloning and review.
+backend/data/                                                     # derived training features (tens of MB)
+backend/scripts/BPD_Arrests.csv                                   # raw arrest export from the data lake
+backend/scripts/Homeless_Shelter_1167958174770612354.csv          # city shelter inventory
+backend/scripts/Universities_and_Colleges_-3774145757448629151.csv# university/college locations
+backend/crime_hotspot_model.pkl                                   # trained RandomForest weights
+backend/crime_feature_vectorizer.pkl                              # DictVectorizer fitted for the model
+
+# local runtime caches and ad-hoc scratch space (safe to delete between runs)
+cache/                                                            # FAISS + misc scratch files
+outputs/                                                          # pipeline output snapshots
+sandbox/                                                          # experimentation sandbox
+

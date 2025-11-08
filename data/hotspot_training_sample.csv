@@ -1,0 +1,4 @@
+location,hour_of_day,day_of_week,crime_type,incident_count_last_24h,severity_score,is_hotspot
+Patterson High School,16,2,robbery,4,0.65,1
+Downtown Transit Hub,8,1,theft,2,0.20,0
+North Avenue Gas Station,21,5,shooting,5,0.90,1

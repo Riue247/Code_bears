@@ -1,0 +1,1 @@
+print("GPU active:", llm.ctx.has_gpu)

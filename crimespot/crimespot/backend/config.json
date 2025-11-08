@@ -1,0 +1,27 @@
+{
+  "gemini_api_key": "AIzaSyBONAdZp-qaOecvqEkITR2prx1P7YEl4V4",
+  "gemini_model": "models/gemini-2.5-flash",
+  "s3_bucket": "crimedatalake",
+  "sdata_prefix": "",
+  "data_path": "data-lake/crime",
+  "chunk_size": 512,
+  "chunk_overlap": 64,
+  "embedding_model": "BAAI/bge-small-en",
+  "metadata": {
+    "location": "Baltimore",
+    "timestamp": "2025-11-07",
+    "entity_type": "crime_report"
+  },
+  "query": "Gas station crime near Patterson High School after 4 PM",
+  "top_k": 5,
+  "debug": true,
+  "llama_model_path": "llama.cpp/models/llama-2-7b-chat.Q5_0.gguf",
+  "cache_dir": "cache",
+  "cache_enabled": true,
+  "max_context_chars": 800,
+  "save_outputs": true,
+  "output_dir": "outputs",
+  "max_tokens": 128,
+  "hotspot_model_path": "crime_hotspot_model.pkl",
+  "feature_vectorizer_path": "crime_feature_vectorizer.pkl"
+}
